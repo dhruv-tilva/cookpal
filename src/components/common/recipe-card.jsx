@@ -4,10 +4,8 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Skeleton from "./skeleton";
 import { Waypoint } from "react-waypoint";
-import { Spinner } from "./spinner";
 
 const RecipeCard = ({ inputData }) => {
-  const [searchData, setSearchData] = useState("");
   const [recipeList, setRecipeList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [totalItem, setTotalItem] = useState(0);
